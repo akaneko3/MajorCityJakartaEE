@@ -1,4 +1,4 @@
-# MajorCity
+# MajorCityJakartaEE
 長らく放置していましたが, 本格的に OpenJDK 21 で一から作り直しました.
 
 
