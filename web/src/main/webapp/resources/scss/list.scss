@@ -1,0 +1,26 @@
+@import 'common.scss';
+
+caption { color: darkcyan; }
+
+thead {
+    background-color: darkcyan;
+    color: lavender;
+    font-size: 14pt;
+}
+
+tbody tr {
+    &:nth-child(odd) { background-color: powderblue; }
+    &:nth-child(even) { background-color: lavender; }
+}
+
+
+td {
+    text-align: left;
+    &.no { width: 30px; }
+    &.pref { width: 100px; }
+    &.name { width: 120px; }
+    &.button {
+        text-align: center;
+        width: 80px;
+    }
+}

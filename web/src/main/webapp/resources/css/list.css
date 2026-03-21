@@ -1,0 +1,41 @@
+table {
+  margin: auto;
+}
+
+caption {
+  font-size: 20pt;
+}
+
+caption {
+  color: darkcyan;
+}
+
+thead {
+  background-color: darkcyan;
+  color: lavender;
+  font-size: 14pt;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: powderblue;
+}
+tbody tr:nth-child(even) {
+  background-color: lavender;
+}
+
+td {
+  text-align: left;
+}
+td.no {
+  width: 30px;
+}
+td.pref {
+  width: 100px;
+}
+td.name {
+  width: 120px;
+}
+td.button {
+  text-align: center;
+  width: 80px;
+}

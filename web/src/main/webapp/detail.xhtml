@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://xmlns.jcp.org/jsf/html"
+  xmlns:f="http://xmlns.jcp.org/jsf/core">
+  <h:head>
+    <title>#{majorCity.city.name}の詳細</title>
+    <h:outputStylesheet library="css" name="detail.css" />
+  </h:head>
+  <h:body>
+    <table>
+      <caption>#{majorCity.city.name}のデータ</caption>
+      <tr>
+        <th>指定日</th>
+        <td>
+          <h:outputText value="#{majorCity.city.designated}">
+            <f:convertDateTime pattern="yyyy 年 M 月 d 日" />
+          </h:outputText>
+        </td>
+      </tr>
+      <tr>
+        <th>地方</th>
+        <td>#{majorCity.city.prefecture.district.name}</td>
+      </tr>
+      <tr>
+        <th>都道府県</th>
+        <td>#{majorCity.city.prefecture.name}</td>
+      </tr>
+      <tr>
+        <th>面積</th>
+        <td>
+          <h:outputText value="#{majorCity.city.area}">
+            <f:convertNumber />
+          </h:outputText>km&sup2;
+        </td>
+      </tr>
+      <tr>
+        <th>人口</th>
+        <td>
+          <h:outputText value="#{majorCity.city.population}">
+            <f:convertNumber />
+          </h:outputText>人
+        </td>
+      </tr>
+    </table>
+    <p><h:link value="一覧に戻る" outcome="list" /></p>
+  </h:body>
+</html>
