@@ -175,13 +175,15 @@
                 <version>${version.wildfly.maven.plugin}</version>
                 <inherited>true</inherited>
                 <configuration>
+                    <jbossHome>C:\wildfly-39.0.1.Final</jbossHome>
+                    <serverConfig>standalone.xml</serverConfig>
                     <skip>true</skip>
                 </configuration>
                 <executions>
                     <execution>
                         <phase>package</phase>
                         <goals>
-                            <goal>deploy</goal>
+                            <goal>run</goal>
                         </goals>
                     </execution>
                 </executions>
