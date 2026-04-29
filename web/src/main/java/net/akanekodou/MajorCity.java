@@ -12,7 +12,7 @@ import net.akanekodou.dao.CityDAO;
 import net.akanekodou.entity.City;
 
 @SuppressWarnings("serial")
-@Named("majorCity")
+@Named
 @SessionScoped
 public class MajorCity implements Serializable {
     @Inject
